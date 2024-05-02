@@ -19,7 +19,16 @@
 
 <body>
     <header>
-        <div class="ldg-header text-center mb-5">
+        <div class="ldg-header mb-5 d-flex justify-content-between">
             <h1>Lista Hotel</h1>
+            <form class="d-flex" action="index.php" method="GET">
+                <select name="park" class="form-control me-2">
+                    <option value="all">All</option>
+                    <option value="0">Not available</option>
+                    <option value="1">Available</option>
+                </select>
+
+                <button type="submit" class="btn btn-success">Invia</button>
+            </form>
         </div>
     </header>
