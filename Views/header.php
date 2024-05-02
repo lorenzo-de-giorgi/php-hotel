@@ -18,3 +18,8 @@
 </head>
 
 <body>
+    <header>
+        <div class="ldg-header text-center mb-5">
+            <h1>Lista Hotel</h1>
+        </div>
+    </header>

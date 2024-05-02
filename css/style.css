@@ -7,14 +7,14 @@
 
 header{
     background-color: var(--black);
+    color: var(--teal-color);
 }
 
-main{
+.ldg-header{
+    padding: 15px;
+}
+
+body{
     background-color: var(--gray);
-    color: var(--white-color);
-}
-
-footer{
-    background-color: var(--black);
     color: var(--white-color);
 }
