@@ -1,0 +1,20 @@
+:root{
+    --black: #222831;
+    --gray: #31363F;
+    --teal-color: #76ABAE;
+    --white-color: #EEEEEE;
+}
+
+header{
+    background-color: var(--black);
+}
+
+main{
+    background-color: var(--gray);
+    color: var(--white-color);
+}
+
+footer{
+    background-color: var(--black);
+    color: var(--white-color);
+}
