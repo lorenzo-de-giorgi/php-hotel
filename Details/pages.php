@@ -28,7 +28,7 @@
 
 </head>
 <body>
-    <header class="ldg-header">
+    <header class="ldg-header-pages">
         <div class="container d-flex justify-content-between align-items-center">
             <h1><?php echo $details['name'] ?></h1>
             <a class="ldg-a" href="../index.php"><i class="fa-solid fa-arrow-left"></i> Back</a>
