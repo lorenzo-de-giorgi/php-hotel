@@ -9,7 +9,7 @@ foreach ($hotelS as $hotel) {
 ?>
 
 <div class="container">
-<table class="table table-dark table-striped">
+<table class="table table-dark table-striped mt-5">
     <thead>
         <tr class="text-center">
             <th scope="col"><i class="fa-solid fa-hotel"></i> Hotel</th>

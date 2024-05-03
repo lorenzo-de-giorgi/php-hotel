@@ -17,30 +17,3 @@
 </head>
 
 <body>
-    <header>
-        <div class="ldg-header mb-5 d-flex justify-content-between">
-            <h1>Lista Hotel</h1>
-            <form class="d-flex align-items-center " action="index.php" method="GET">
-                <div class="p-2">
-                    <select name="stats" class="form-control me-2">
-                        <option value="all">All</option>
-                        <option value="0">Not available</option>
-                        <option value="1">Available</option>
-                    </select>
-                </div>
-                <div class="p-2">
-                    <select action="index.php" name="stars" class="form-control me-2">
-                        <option value="all">All</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                    </select>
-                </div>
-                <div class="p-2">
-                    <button type="submit" class="ldg-button">Invia</button>
-                </div>
-            </form>
-        </div>
-    </header>

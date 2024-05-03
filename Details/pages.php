@@ -3,9 +3,9 @@
     include __DIR__ . "/../Views/header.php";
 ?>
 
-<main>
+<header>
     <h1><?php echo $_GET['name'] ?></h1>
-</main>
+</header>
 
 <?php
     include __DIR__ . "/../Views/footer.php";
