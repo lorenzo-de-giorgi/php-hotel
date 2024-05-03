@@ -9,14 +9,19 @@
     include __DIR__ . "/Models/hotels.php";
     //var_dump($hotels);
 
-    if (!empty($_GET['stats']) || (isset($_GET['stats']) && $_GET['stats'] == 0)) {
+    if (!empty($_GET['stats']) || (isset($_GET['stats']) && $_GET['stats'] == 0) && !empty($_GET['stars']) || (isset($_GET['stars']) && $_GET['stars'] == 0)) {
         $stats = $_GET['stats'];
-        $hotel = array_filter($hotel, function ($hotel) use ($stats) {
-          return $hotel['parking'] == $stats || $stats == "all";
+        $stars = $_GET['stars'];
+        $parking = array_filter($hotels, function ($hotel) use ($stats) {
+            return $hotel['parking'] == $stats || $stats == "all";
+        });
+        $hotelS = array_filter($parking, function ($hotel) use ($stars) {
+            return $hotel['vote'] >= $stars || $stars == "all";
         });
     } else {
-        $hotel = $hotels;
+        $hotelS = $hotels;
     }
+
     include __DIR__ . "/Views/header.php";
 ?>
 
