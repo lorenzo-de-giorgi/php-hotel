@@ -26,7 +26,7 @@
 ?>
 
 <header>
-        <div class="ldg-header mb-5 d-flex justify-content-between">
+        <div class="ldg-header mb-5 d-flex justify-content-between container">
             <h1>Lista Hotel</h1>
             <form class="d-flex align-items-center " action="index.php" method="GET">
                 <div class="p-1">
