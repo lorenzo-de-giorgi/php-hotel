@@ -23,8 +23,8 @@
 <main class="container">
     <div class="d-flex justify-content-between align-items-center">
         <h3><?= "Ciao" . ' ' . $_SESSION['name']?></h3>
+        <a href="logout.php" class="btn btn-danger">Logout</a>
     </div>
-    
     <?php
         include __DIR__ . "/Views/table.php"
     ?>
