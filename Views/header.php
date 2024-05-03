@@ -27,7 +27,6 @@
                     <option value="0">Not available</option>
                     <option value="1">Available</option>
                 </select>
-
                 <button type="submit" class="btn btn-success">Invia</button>
             </form>
         </div>
