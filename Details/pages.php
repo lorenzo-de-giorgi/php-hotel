@@ -1,5 +1,15 @@
 <?php
+    session_start();
+    if(!isset($_SESSION['userId'])){
+        session_destroy();
+        header('Location: ../login.php');
+        die();
+    }
+
     include __DIR__ . "/../Models/hotels.php";
+
+    $details = getHotelByName($hotels);
+    
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -14,18 +24,18 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link grity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
-    <title><?php echo $_GET['name'] ?></title>
+    <title><?php echo $details['name'] ?></title>
 
 </head>
 <body>
     <header class="ldg-header">
         <div class="container d-flex justify-content-between align-items-center">
-            <h1><?php echo $_GET['name'] ?></h1>
+            <h1><?php echo $details['name'] ?></h1>
             <a class="ldg-a" href="../index.php"><i class="fa-solid fa-arrow-left"></i> Back</a>
         </div>
-    </header>   
+    </header>
+    
+    <main>
+        <img src="<?php echo $details['image'] ?>" alt="<?php echo $details['name'] . '' . 'image'?>">
+    </main>
 </body>
-
-<?php
-    include __DIR__ . "/../Views/footer.php";
-?>
